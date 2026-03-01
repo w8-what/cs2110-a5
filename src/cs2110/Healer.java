@@ -1,6 +1,6 @@
 package cs2110;
 
-public class Healer extends Mage() {
+public class Healer extends Mage {
 
     public Healer(String name, GameEngine engine) {
         super(name, engine);
@@ -11,9 +11,12 @@ public class Healer extends Mage() {
         return "healing spell";
     }
 
-    """
-      heals players!!!!!!!!! - also rolls the die. yes.
-    """
+    /**
+     * heals players!!!!!!!!! - also rolls the die. yes.
+     */
+    // TODO: write documentation plz
+
+
     @Override
     protected void castSpell() {
         Player target = engine.selectPlayerTarget();
