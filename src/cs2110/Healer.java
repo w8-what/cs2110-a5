@@ -6,17 +6,18 @@ public class Healer extends Mage {
         super(name, engine);
     }
 
+    /**
+     * Returns the spellName of the Healer
+     */
     @Override
     protected String spellName() {
         return "healing spell";
     }
 
     /**
-     * heals players!!!!!!!!! - also rolls the die. yes.
+     * Selects a player to heal. The number of health points sent to that player is a random roll
+     * between 0 and this player's health.
      */
-    // TODO: write documentation plz
-
-
     @Override
     protected void castSpell() {
         Player target = engine.selectPlayerTarget();

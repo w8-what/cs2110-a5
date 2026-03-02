@@ -16,7 +16,9 @@ public class FireMage extends Mage {
     protected String spellName() { return "fire spell"; }
 
     /**
-     * Identifies the target, rolls the random die, doubles the attack damage, and deals and takes damage in turn with the rules of the gam - full damage for the dude, 1/4 for the player.
+     * Selects a monster to attack with a fireball, which doubles the roll of an ordinary attack.
+     * Regardless of the success of the fireball attack, its caster always takes damage equal to
+     * one quarter (rounded down to the nearest integer) of the fireball's damage.
      */
     @Override
     protected void castSpell() {
