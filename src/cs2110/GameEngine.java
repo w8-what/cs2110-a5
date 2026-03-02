@@ -121,13 +121,10 @@ public class GameEngine {
      */
     private Player createPlayer(String name, int type) {
         if (type == 0) {
-            // Uncomment this line after you have implemented this class.
             return new Fighter(name, this);
         } else if (type == 1) {
-            // Uncomment this line after you have implemented this class.
             return new FireMage(name, this);
         } else if (type == 2) {
-            // Uncomment this line after you have implemented this class.
             return new Healer(name, this);
         } else {
             throw new IllegalArgumentException();
